@@ -186,11 +186,12 @@ const gageReset = () => {
   anime({
     targets: ".bubble-gage",
     width: "0%",
+  }).add({
+    targets: ".bubble-gage1",
+    width: "0%",
   });
 };
 
 contentList.forEach((content) => {
-  content.addEventListener("mouseout", () => {
-    gageReset();
-  });
+  content.addEventListener("mouseout", (e) => {});
 });
